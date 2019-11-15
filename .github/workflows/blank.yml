@@ -1,0 +1,87 @@
+customer_name = ()
+
+audioparts = ["front speakers," "tweeter seperates," "rear speakers," "speaker amplifier," "subwoofer amplifier,"]
+
+package_1 = ["front speakers", "rear speakers"]
+package_2 = ["front speakers", "rear speakers", "tweeter seperates", "speaker amplifier"]
+package_3 = ["front speakers", "rear speakers", "subwoofer amplifier", "subwoofer"]
+package_4 = ["front speakers", "tweeter seperates", "rear speakers", "speaker amplifier", "subwoofer", "subwoofer amplifier"]
+
+
+
+puts "Welcome to 'The Car Stereo Shop' online guidance application"
+    sleep 1.5
+puts "This program is designed to make it as simple as possible for you to choose a Car Audio System suitable for your music needs with only a few questions"
+    sleep 2.5
+print "Lets start off with your Name ?" + " "
+    customer_name = gets.chomp 
+puts "Welcome #{customer_name} Lets get started !"
+    sleep 1
+
+puts  "First question"
+    sleep 1
+puts "Are you happy to install a subwoofer ? Keeping in mind this adds additional weight to the total system.
+Please select from (1) yes or (2) no"
+    subwoofer = gets.chomp
+    sleep 1
+    puts "Thanks #{customer_name}, Second question"
+    sleep 1
+
+puts "How important is sound quality to you ? 
+Please select from (1) Not very, (2) Average and (3) Very important"
+    sound_q = gets.chomp
+    sleep 1
+    puts "Thanks #{customer_name}, Last question"
+    sleep 1
+
+puts "What genre of music would you most prefer from the selection ?
+Please select from (1) Classical/Instrumental, (2) Rock/Metal, (3) Rap/Techno. "
+    genre = gets.chomp
+    sleep 1
+    puts "Thanks #{customer_name}. See how easy that was ?"
+    sleep 1
+    puts "Based on your selections"
+    sleep 1
+    puts "Calculating now...."
+    sleep 1.5
+
+if subwoofer == "1" && sound_q == "1" && genre == "1"
+    print "#{customer_name} we suggest #{package_1}"
+elsif subwoofer == "1" && sound_q == "1" && genre == "2"
+    puts "#{customer_name} we suggest #{}"
+elsif subwoofer == "1" && sound_q == "1" && genre == "3"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "1" && sound_q == "2" && genre == "1"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "1" && sound_q == "2" && genre == "2"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "1" && sound_q == "2" && genre == "3"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "1" && sound_q == "3" && genre == "1"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "1" && sound_q == "3" && genre == "2"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "1" && sound_q == "3" && genre == "3"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "2" && sound_q == "1" && genre == "1"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "2" && sound_q == "1" && genre == "2"
+    puts "#{customer_name} we recommend"  
+elsif subwoofer == "2" && sound_q == "1" && genre == "3"
+    puts "#{customer_name} we recommend"        
+elsif subwoofer == "2" && sound_q == "2" && genre == "1"
+    puts "#{customer_name} we recommend"       
+elsif subwoofer == "2" && sound_q == "2" && genre == "2"
+    puts "#{customer_name} we recommend"         
+elsif subwoofer == "2" && sound_q == "2" && genre == "3"
+    puts "#{customer_name} we recommend"   
+elsif subwoofer == "2" && sound_q == "3" && genre == "1"
+    puts "#{customer_name} we recommend"
+elsif subwoofer == "2" && sound_q == "3" && genre == "2"
+    puts "#{customer_name} we recommend"        
+elsif subwoofer == "2" && sound_q == "3" && genre == "3"
+    puts "#{customer_name} we recommend"
+else 
+    puts "Sorry you have input information incorrectly"
+
+end
